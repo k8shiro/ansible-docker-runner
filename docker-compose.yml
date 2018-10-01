@@ -1,0 +1,14 @@
+version: '3'
+services:
+  runner:
+    build:
+      context: ./runner
+      args:
+        http_proxy: ${HTTP_PROXY}
+        https_proxy: ${HTTP_PROXY}
+        HTTP_PROXY: ${HTTP_PROXY}
+        HTTPS_PROXY: ${HTTP_PROXY}
+        ANSIBLE_VERSION: 2.5.0
+    tty: true
+    volumes:
+      - ./playbook:/playbook
