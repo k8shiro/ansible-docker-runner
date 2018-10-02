@@ -1,7 +1,7 @@
 FROM python:2.7-alpine3.8
 
 RUN apk update
-RUN apk add gcc make git libffi-dev musl-dev openssl-dev perl py-pip python python-dev sshpass
+RUN apk add gcc make git libffi-dev musl-dev openssl-dev perl py-pip python python-dev sshpass openssh-client rsync
 
 RUN mkdir /playbook
 

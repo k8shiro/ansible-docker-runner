@@ -8,7 +8,7 @@ services:
         https_proxy: ${HTTP_PROXY}
         HTTP_PROXY: ${HTTP_PROXY}
         HTTPS_PROXY: ${HTTP_PROXY}
-        ANSIBLE_VERSION: 2.5.0
+        ANSIBLE_VERSION: 2.6.5
     tty: true
     volumes:
       - ./playbook:/playbook
